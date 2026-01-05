@@ -102,7 +102,7 @@ class LocationService {
 
       // Send to API
       final apiResult = await _apiService.sendAlert(
-        oderId: oderId,
+        userId: userId,
         alertType: AppConstants.yellowAlert,
         latitude: position.latitude,
         longitude: position.longitude,
@@ -156,7 +156,7 @@ class LocationService {
 
       // Send to API
       final apiResult = await _apiService.sendAlert(
-        oderId: oderId,
+        userId: userId,
         alertType: AppConstants.redAlert,
         latitude: position.latitude,
         longitude: position.longitude,
@@ -271,6 +271,3 @@ class LocationService {
     return 'https://www.google.com/maps?q=$latitude,$longitude';
   }
 }
-
-// Using AlertResult from api_service.dart
-export 'api_service.dart' show AlertResult;

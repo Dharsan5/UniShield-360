@@ -1,7 +1,7 @@
 /// Chat message model for anonymous stress sharing
 class ChatMessage {
   final String id;
-  final String oderId;
+  final String userId;
   final String content;
   final String anonymousName; // e.g., "Anonymous Tiger"
   final String anonymousAvatar;
@@ -41,7 +41,7 @@ class ChatMessage {
 
   Map<String, dynamic> toMap() {
     return {
-      'userId': oderId,
+      'userId': userId,
       'content': content,
       'anonymousName': anonymousName,
       'anonymousAvatar': anonymousAvatar,
@@ -52,8 +52,6 @@ class ChatMessage {
       'supportedBy': supportedBy,
     };
   }
-
-  String get userId => oderId;
 }
 
 /// Chat room model

@@ -170,7 +170,7 @@ class ApiService {
 
   /// Send safety alert (Module B - Guardian Mode)
   Future<AlertResult> sendAlert({
-    required String oderId,
+    required String userId,
     required String alertType,
     required double latitude,
     required double longitude,
@@ -181,7 +181,7 @@ class ApiService {
         Uri.parse('$baseUrl${ApiConfig.sendAlert}'),
         headers: {'Content-Type': 'application/json'},
         body: json.encode({
-          'user_id': oderId,
+          'user_id': userId,
           'alert_type': alertType,
           'latitude': latitude,
           'longitude': longitude,

@@ -1,7 +1,7 @@
 /// Alert model for safety alerts
 class AlertModel {
   final String id;
-  final String oderId;
+  final String userId;
   final String alertType; // 'yellow' or 'red'
   final double latitude;
   final double longitude;
@@ -59,6 +59,4 @@ class AlertModel {
 
   bool get isEmergency => alertType == 'red';
   bool get isActive => status == 'active';
-
-  String get userId => oderId;
 }

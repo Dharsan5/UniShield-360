@@ -201,7 +201,7 @@
     },
     {
       "name": "equatable",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.7",
+      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.8",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -759,27 +759,21 @@
     },
     {
       "name": "sensors_plus",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/sensors_plus-1.4.1",
+      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/sensors_plus-6.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.3"
     },
     {
       "name": "sensors_plus_platform_interface",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/sensors_plus_platform_interface-1.2.0",
+      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/sensors_plus_platform_interface-2.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
-      "name": "sensors_plus_web",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/sensors_plus_web-1.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "shake",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/shake-2.2.0",
+      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/shake-3.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "shared_preferences",
@@ -981,7 +975,7 @@
     },
     {
       "name": "vibration",
-      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/vibration-1.9.0",
+      "rootUri": "file:///C:/Users/dhars/AppData/Local/Pub/Cache/hosted/pub.dev/vibration-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },

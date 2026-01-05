@@ -212,7 +212,7 @@ class ChatProvider extends ChangeNotifier {
       // Create message
       await _firestore.collection(FirebaseCollections.chatMessages).add({
         'roomId': roomId,
-        'userId': oderId,
+        'userId': userId,
         'content': content.trim(),
         'anonymousName': avatar['name'],
         'anonymousAvatar': avatar['emoji'],
@@ -243,7 +243,7 @@ class ChatProvider extends ChangeNotifier {
   }
 
   /// Support (like) a message
-  Future<bool> supportMessage(String messageId, String oderId) async {
+  Future<bool> supportMessage(String messageId, String userId) async {
     try {
       final doc = await _firestore
           .collection(FirebaseCollections.chatMessages)
@@ -254,14 +254,14 @@ class ChatProvider extends ChangeNotifier {
         final data = doc.data()!;
         final supportedBy = List<String>.from(data['supportedBy'] ?? []);
 
-        if (supportedBy.contains(oderId)) {
+        if (supportedBy.contains(userId)) {
           // Already supported, remove support
           await _firestore
               .collection(FirebaseCollections.chatMessages)
               .doc(messageId)
               .update({
             'supportCount': FieldValue.increment(-1),
-            'supportedBy': FieldValue.arrayRemove([oderId]),
+            'supportedBy': FieldValue.arrayRemove([userId]),
           });
         } else {
           // Add support
@@ -270,7 +270,7 @@ class ChatProvider extends ChangeNotifier {
               .doc(messageId)
               .update({
             'supportCount': FieldValue.increment(1),
-            'supportedBy': FieldValue.arrayUnion([oderId]),
+            'supportedBy': FieldValue.arrayUnion([userId]),
           });
         }
         return true;
