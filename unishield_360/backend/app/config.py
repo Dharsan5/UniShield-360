@@ -14,6 +14,12 @@ class Settings(BaseSettings):
     # Firebase Settings
     FIREBASE_CREDENTIALS_PATH: Optional[str] = None
     FIREBASE_PROJECT_ID: Optional[str] = None
+    FIREBASE_API_KEY: Optional[str] = None
+    FIREBASE_AUTH_DOMAIN: Optional[str] = None
+    FIREBASE_STORAGE_BUCKET: Optional[str] = None
+    FIREBASE_MESSAGING_SENDER_ID: Optional[str] = None
+    FIREBASE_APP_ID: Optional[str] = None
+    FIREBASE_MEASUREMENT_ID: Optional[str] = None
     
     # AI Model Settings
     VOICE_MODEL_CONFIDENCE_THRESHOLD: float = 0.7

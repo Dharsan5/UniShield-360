@@ -74,7 +74,6 @@ class AppTheme {
         backgroundColor: emergencyRed,
         foregroundColor: Colors.white,
       ),
-      fontFamily: 'Poppins',
     );
   }
   
@@ -130,7 +129,6 @@ class AppTheme {
         backgroundColor: emergencyRed,
         foregroundColor: Colors.white,
       ),
-      fontFamily: 'Poppins',
     );
   }
 }
